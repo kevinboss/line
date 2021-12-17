@@ -178,11 +178,11 @@ window,
 }
 
 
-/* remove window control buttons */
+/* move window control buttons */
 .titlebar-buttonbox-container {
   display: block;
-  margin-left: calc(((var(--uc-urlbar-width) * -1) + 65px));
-  margin-right: calc((var(--uc-urlbar-width) - 65px));
+  position: absolute !important;
+  left: 0;
   margin-top: 12px;
 }
 
@@ -374,11 +374,14 @@ inset-inline-end: 0 !important;
   
 
 /* move tabs bar over */
-#TabsToolbar { margin-left: calc(var(--uc-urlbar-width) - 65px) !important; }
+#TabsToolbar { margin-left: calc(var(--uc-urlbar-width)) !important; }
 
 
 /* move entire nav bar  */
 #nav-bar { margin: calc((var(--urlbar-min-height) * -1) - 8px) calc(100vw - var(--uc-urlbar-width)) 0 80px !important; }
+@media all and (display-mode: fullscreen) {
+  #nav-bar { margin-left: 0 !important; }
+}
 
 
 /* Container Tabs */
