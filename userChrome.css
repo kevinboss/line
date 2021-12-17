@@ -378,7 +378,7 @@ inset-inline-end: 0 !important;
 
 
 /* move entire nav bar  */
-#nav-bar { margin: calc((var(--urlbar-min-height) * -1) - 8px) calc(100vw - var(--uc-urlbar-width)) 0 80px !important; }
+#nav-bar { margin: calc((var(--urlbar-min-height) * -1) - 8px) calc(100vw - var(--uc-urlbar-width)) 0 75px !important; }
 @media all and (display-mode: fullscreen) {
   #nav-bar { margin-left: 0 !important; }
 }
