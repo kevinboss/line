@@ -375,12 +375,14 @@ inset-inline-end: 0 !important;
 
 /* move tabs bar over */
 #TabsToolbar { margin-left: calc(var(--uc-urlbar-width)) !important; }
-
+@media all and (display-mode: fullscreen) {
+  #TabsToolbar { margin-left: calc(var(--uc-urlbar-width) - 75px) !important; }
+}
 
 /* move entire nav bar  */
 #nav-bar { margin: calc((var(--urlbar-min-height) * -1) - 8px) calc(100vw - var(--uc-urlbar-width)) 0 75px !important; }
 @media all and (display-mode: fullscreen) {
-  #nav-bar { margin-left: 0 !important; }
+  #nav-bar { margin-left: 0 !important; margin-right: calc(100vw - var(--uc-urlbar-width) + 75px) !important; }
 }
 
 
