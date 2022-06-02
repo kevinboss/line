@@ -1,6 +1,7 @@
 # line
-**A minimalist, simple, mouse centered userChrome — heavily inspired by [Cascade]([https://github.com/cascade](https://github.com/andreasgrafen/cascade)).**
+A minimalist, simple, mouse centered userChrome — heavily inspired by [Cascade](https://github.com/andreasgrafen/cascade).
 
+Preview:
 ![screenshot](https://github.com/kevinboss/userChrome/blob/master/screenshot.png)
 
 
