@@ -389,7 +389,8 @@ window,
 
 /* move entire nav bar  */
 #nav-bar {
-    margin: calc((var(--urlbar-min-height) * -1) - 8px) calc(100vw - var(--uc-urlbar-width)) 0 40px !important;
+    margin: calc((var(--urlbar-min-height) * -1) - 8px) calc(100vw - var(--uc-urlbar-width)) 0 0 !important;
+    padding-left: 40px !important; 
 }
 
 /* Container Tabs */
