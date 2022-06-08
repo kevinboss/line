@@ -69,6 +69,7 @@
     /* adds left and right margin to the container-tabs indicator */
     --container-tabs-indicator-margin: 10px;
 
+    --drag-area-width: 40px;
 }
 
 /*---+---+---+---+---+---+---+
@@ -384,13 +385,13 @@ window,
 
 /* move tabs bar over */
 #TabsToolbar {
-    margin-left: var(--uc-urlbar-width) !important;
+    margin-left: calc(var(--uc-urlbar-width) + var(--drag-area-width)) !important;
 }
 
 /* move entire nav bar  */
 #nav-bar {
-    margin: calc((var(--urlbar-min-height) * -1) - 8px) calc(100vw - var(--uc-urlbar-width)) 0 0 !important;
-    padding-left: 40px !important; 
+    margin: calc((var(--urlbar-min-height) * -1) - 8px) calc(100vw - var(--uc-urlbar-width) - var(--drag-area-width)) 0 0 !important;
+    padding-left: var(--drag-area-width);
 }
 
 /* Container Tabs */
