@@ -68,6 +68,7 @@
   /* adds left and right margin to the container-tabs indicator */
   --container-tabs-indicator-margin: 10px;
 
+  --drag-area-width: 40px;
 }
 
   /*---+---+---+---+---+---+---+
@@ -376,7 +377,7 @@ inset-inline-end: 0 !important;
 /* move tabs bar over */
 #TabsToolbar { 
   margin-left: calc(var(--uc-urlbar-width)) !important; 
-  padding-right: 40px !important;
+  padding-right: var(--drag-area-width) !important;
 }
 @media all and (display-mode: fullscreen) {
   #TabsToolbar { 
