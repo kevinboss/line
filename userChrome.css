@@ -385,14 +385,33 @@ window,
 
 /* move tabs bar over */
 #TabsToolbar {
-    margin-left: calc(var(--uc-urlbar-width) + var(--drag-area-width)) !important;
+    margin-left: calc(var(--uc-urlbar-width) + var(--drag-area-width) + 75px) !important;
 }
 
 /* move entire nav bar  */
 #nav-bar {
-    margin: calc((var(--urlbar-min-height) * -1) - 8px) calc(100vw - var(--uc-urlbar-width) - var(--drag-area-width)) 0 0 !important;
+    margin: calc((var(--urlbar-min-height) * -1) - 8px) calc(100vw - var(--uc-urlbar-width) - var(--drag-area-width) - 75px) 0 0 !important;
     padding-left: var(--drag-area-width);
 }
+
+@media all and (max-width: 1100px) {
+    .titlebar-buttonbox-container {
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 0px;
+        height: calc(var(--urlbar-min-height) + 8px) !important;
+    }
+    #nav-bar { 
+      margin-top: calc((var(--urlbar-min-height) * -2) - 12px) !important;
+      margin-bottom: calc(var(--urlbar-min-height) + 4px) !important; 
+      margin-right: 135px !important;
+    }
+    #TabsToolbar {
+      margin-left: var(--drag-area-width) !important;
+      margin-top: calc(var(--urlbar-min-height) + 4px) !important;
+    }
+  }
 
 /* Container Tabs */
 .identity-color-blue {
