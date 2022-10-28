@@ -184,7 +184,7 @@ window,
   display: block;
   position: absolute !important;
   left: 0;
-  margin-top: 12px;
+  top: 12px;
 }
 
 
@@ -244,14 +244,14 @@ window,
 .tab-icon-overlay:not([crashed]),
 .tab-icon-overlay[pinned][crashed][selected] {
 
-top: 5px !important;
-z-index: 1 !important;
+  top: 5px !important;
+  z-index: 1 !important;
 
-padding: 1.5px !important;
-inset-inline-end: -8px !important;
-width: 16px !important; height: 16px !important;
+  padding: 1.5px !important;
+  inset-inline-end: -8px !important;
+  width: 16px !important; height: 16px !important;
 
-border-radius: 10px !important;
+  border-radius: 10px !important;
 
 }
 
@@ -259,14 +259,14 @@ border-radius: 10px !important;
 /* style and position speaker icon */
 .tab-icon-overlay:not([sharing], [crashed]):is([soundplaying], [muted], [activemedia-blocked]) {
 
-stroke: transparent !important;
-background: transparent !important;
-opacity: 1 !important; fill-opacity: 0.8 !important;
+  stroke: transparent !important;
+  background: transparent !important;
+  opacity: 1 !important; fill-opacity: 0.8 !important;
 
-color: currentColor !important;
-  
-stroke: var(--uc-theme-colour) !important;
-background-color: var(--uc-theme-colour) !important;
+  color: currentColor !important;
+    
+  stroke: var(--uc-theme-colour) !important;
+  background-color: var(--uc-theme-colour) !important;
 
 }
 
@@ -274,8 +274,8 @@ background-color: var(--uc-theme-colour) !important;
 /* change the colours of the speaker icon on active tab to match tab colours */
 .tabbrowser-tab[selected] .tab-icon-overlay:not([sharing], [crashed]):is([soundplaying], [muted], [activemedia-blocked]) {
       
-stroke: var(--uc-hover-colour) !important;
-background-color: var(--uc-hover-colour) !important;
+  stroke: var(--uc-hover-colour) !important;
+  background-color: var(--uc-hover-colour) !important;
 
 }
 
@@ -285,11 +285,11 @@ background-color: var(--uc-hover-colour) !important;
 
 .tabbrowser-tab:not([image]) .tab-icon-overlay:not([pinned], [sharing], [crashed]) {
 
-top: 0 !important;
+  top: 0 !important;
 
-padding: 0 !important;
-margin-inline-end: 5.5px !important; 
-inset-inline-end: 0 !important;
+  padding: 0 !important;
+  margin-inline-end: 5.5px !important; 
+  inset-inline-end: 0 !important;
 
 }
 
@@ -375,8 +375,8 @@ inset-inline-end: 0 !important;
   
 
 /* move tabs bar over */
-#TabsToolbar { 
-  margin-left: calc(var(--uc-urlbar-width)) !important; 
+#TabsToolbar {
+  margin-left: calc(var(--uc-urlbar-width) + 75px) !important; 
   padding-right: var(--drag-area-width) !important;
 }
 @media all and (display-mode: fullscreen) {
@@ -387,9 +387,21 @@ inset-inline-end: 0 !important;
 }
 
 /* move entire nav bar  */
-#nav-bar { margin: calc((var(--urlbar-min-height) * -1) - 8px) calc(100vw - var(--uc-urlbar-width)) 0 75px !important; }
+#nav-bar { margin: calc((var(--urlbar-min-height) * -1) - 8px) calc(100vw - var(--uc-urlbar-width) - 75px) 0 75px !important; }
 @media all and (display-mode: fullscreen) {
   #nav-bar { margin-left: 0 !important; margin-right: calc(100vw - var(--uc-urlbar-width) + 75px) !important; }
+}
+
+@media all and (max-width: 850px) {
+  #nav-bar { 
+    margin-top: calc((var(--urlbar-min-height) * -2) - 12px) !important;
+    margin-bottom: calc(var(--urlbar-min-height) + 4px) !important; 
+    margin-right: var(--drag-area-width) !important;
+  }
+  #TabsToolbar {
+    margin-left: 1px !important;
+    margin-top: calc(var(--urlbar-min-height) + 4px) !important;
+  }
 }
 
 
