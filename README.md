@@ -4,7 +4,7 @@
 A minimalist, simple, mouse centered userChrome — heavily inspired by [Cascade](https://github.com/andreasgrafen/cascade).
 
 Preview:
-![screenshot](https://github.com/kevinboss/userChrome/blob/macOS/screenshot.png)
+![screenshot](https://github.com/kevinboss/userChrome/blob/macOS/screenshot2.png)
 
 
 ## How to use a userChrome.css theme
