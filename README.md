@@ -1,4 +1,7 @@
 # line
+
+[![CI](https://raw.githubusercontent.com/kevinboss/heartbeat/main/badges/kevinboss_line.svg)](https://github.com/kevinboss/heartbeat)
+
 A minimalist, simple, mouse centered userChrome — heavily inspired by [Cascade](https://github.com/andreasgrafen/cascade).
 
 Preview:
