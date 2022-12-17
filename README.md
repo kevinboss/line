@@ -1,6 +1,7 @@
+![line](https://socialify.git.ci/kevinboss/line/image?font=Jost&language=1&logo=https%3A%2F%2Fi.imgur.com%2Fb4Onimm.png&name=1&pattern=Diagonal%20Stripes&theme=Dark)
+
 # line
 
-![line](https://socialify.git.ci/kevinboss/line/image?font=Jost&language=1&logo=https%3A%2F%2Fi.imgur.com%2Fb4Onimm.png&name=1&pattern=Diagonal%20Stripes&theme=Dark)
 [![CI](https://raw.githubusercontent.com/kevinboss/heartbeat/main/badges/kevinboss_line.svg)](https://github.com/kevinboss/heartbeat)
 
 A minimalist, simple, mouse centered userChrome — heavily inspired by [Cascade](https://github.com/andreasgrafen/cascade).
