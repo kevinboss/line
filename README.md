@@ -7,7 +7,7 @@
 A minimalist, simple, mouse centered userChrome — heavily inspired by [Cascade](https://github.com/andreasgrafen/cascade).
 
 Preview:
-![screenshot](https://github.com/kevinboss/userChrome/blob/master/screenshot.png)
+![screenshot](https://github.com/kevinboss/userChrome/blob/master/screenshot2.png)
 
 
 ## How to use a userChrome.css theme
