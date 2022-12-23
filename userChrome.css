@@ -392,7 +392,7 @@ window,
   #nav-bar { margin-left: 0 !important; margin-right: calc(100vw - var(--uc-urlbar-width) + 75px) !important; }
 }
 
-@media all and (max-width: 850px) {
+@media all and (max-width: 1100px) {
   #nav-bar { 
     margin-top: calc((var(--urlbar-min-height) * -2) - 12px) !important;
     margin-bottom: calc(var(--urlbar-min-height) + 4px) !important; 
