@@ -394,7 +394,7 @@ window,
     padding-left: var(--drag-area-width);
 }
 
-@media all and (max-width: 1100px) {
+@media all and (max-width: 1600px) {
     .titlebar-buttonbox-container {
         display: flex;
         position: absolute;
